@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="wrapper">
+
+    <div class="container">
+      <h1>My Gallery</h1>
+      
+      <div class="gallery">
+        
+        <figure class="card" onclick="playAudio('audio1')">
+          <img src="image1.jpg" alt="">
+          <figcaption>Image1</figcaption>
+          <audio id="audio1" src="audio1.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio2')">
+          <img src="image2.jpeg" alt="">
+          <figcaption>Image2</figcaption>
+          <audio id="audio2" src="audio2.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio3')">
+          <img src="image3.jpeg" alt="">
+          <figcaption>Image3</figcaption>
+          <audio id="audio3" src="audio3.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio4')">
+          <img src="image4.jpeg" alt="">
+          <figcaption>Image4</figcaption>
+          <audio id="audio4" src="audio4.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio5')">
+          <img src="image5.jpeg" alt="">
+          <figcaption>Image5</figcaption>
+          <audio id="audio5" src="audio5.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio6')">
+          <img src="image6.jpeg" alt="">
+          <figcaption>Image6</figcaption>
+          <audio id="audio6" src="audio6.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio7')">
+          <img src="image7.jpeg" alt="">
+          <figcaption>Image7</figcaption>
+          <audio id="audio7" src="audio7.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio8')">
+          <img src="image8.jpeg" alt="">
+          <figcaption>Image8</figcaption>
+          <audio id="audio8" src="audio8.mp3"></audio>
+        </figure>
+        <figure class="card" onclick="playAudio('audio9')">
+          <img src="image9.jpeg" alt="">
+          <figcaption>Image9</figcaption>
+          <audio id="audio9" src="audio9.mp3"></audio>
+        </figure>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function playAudio(audioId) {
+      var audio = document.getElementById(audioId);
+      audio.play();
+    }
+  </script>
+</body>
+</html>
