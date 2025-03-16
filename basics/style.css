@@ -1,0 +1,68 @@
+:root {
+    --primary: #2A2A2A;
+    --accent: #6a5acd;
+    --text: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--primary);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    overflow-x: hidden;
+}
+
+.glass-nav {
+    backdrop-filter: blur(10px);
+    background: rgba(42, 42, 42, 0.8);
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.glass-nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.glass-nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    background: rgba(42, 42, 42, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: var(--accent);
+}
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: rgba(106, 90, 205, 0.1);
+    border-radius: 10px;
+}
